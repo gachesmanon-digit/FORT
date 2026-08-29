@@ -534,6 +534,47 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
         font-family: var(--font-display); font-style: italic; font-weight: 500; font-size: 21px;
         text-align: center; color: var(--text); padding: 40px 0 12px; margin: 0;
       }
+
+      /* ==================================================================
+         Ajustements grands \xE9crans \u2014 le contenu s'\xE9largit et grossit
+         r\xE9ellement au lieu de rester une colonne \xE9troite et centr\xE9e.
+         ================================================================== */
+      @media (min-width: 1024px) {
+        .sm-root { max-width: 920px; padding-left: 32px; padding-right: 32px; }
+        .sm-home, .sm-about, .sm-coaching { max-width: 760px; }
+
+        /* Titres Anton : un vrai impact sur grand \xE9cran, pas juste plus large */
+        .sm-home-h1 { font-size: 56px; }
+        .sm-about-h1, .sm-coaching-h1 { font-size: 44px; }
+        .sm-title { font-size: 38px; }
+
+        .sm-about-lede { font-size: 16.5px; max-width: 54ch; }
+        .sm-about-p { font-size: 15.5px; }
+
+        /* Biblioth\xE8que : 3 colonnes plut\xF4t que 2 qui restent petites */
+        .sm-grid { grid-template-columns: repeat(3, 1fr); gap: 14px; }
+
+        /* Cartes et formulaires : plus d'air, pas juste plus de marge ext\xE9rieure */
+        .sm-card { padding: 18px 18px 16px; }
+        .sm-coaching-form, .sm-max-card, .sm-chart, .sm-history .sm-session { padding: 22px; }
+        .sm-admin-stats { gap: 14px; }
+        .sm-admin-stat { padding: 20px; }
+        .sm-admin-stat-num { font-size: 32px; }
+
+        .sm-home-features { gap: 32px; padding: 44px 0; }
+        .sm-home-feature-title { font-size: 15.5px; }
+        .sm-home-feature-text { font-size: 13px; }
+
+        .sm-footer { margin-top: 60px; }
+      }
+
+      @media (min-width: 1440px) {
+        .sm-root { max-width: 1040px; }
+        .sm-home, .sm-about, .sm-coaching { max-width: 820px; }
+        .sm-home-h1 { font-size: 64px; }
+        .sm-about-h1, .sm-coaching-h1 { font-size: 50px; }
+        .sm-grid { grid-template-columns: repeat(3, 1fr); gap: 16px; }
+      }
     `)}var O$=(0,zN.createRoot)(document.getElementById("root"));O$.render(jN.default.createElement(sb,null));})();
 /*! Bundled license information:
 
