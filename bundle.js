@@ -537,8 +537,8 @@ Va dans Admin \u2192 Demandes pour la traiter.`),ye){let yt=new URL(CR);yt.searc
 
       .sm-install { margin-bottom: 44px; }
       .sm-install-title {
-        font-family: var(--font-headline); font-weight: 700; font-size: 21px; margin: 6px 0 12px;
-        letter-spacing: -0.01em;
+        font-family: var(--font-caps); font-weight: 400; text-transform: uppercase;
+        font-size: 26px; line-height: 1.25; margin: 8px 0 12px; letter-spacing: 0.01em;
       }
       .sm-install-grid { display: grid; grid-template-columns: 1fr; gap: 12px; margin-top: 20px; }
       @media (min-width: 640px) { .sm-install-grid { grid-template-columns: 1fr 1fr; } }
